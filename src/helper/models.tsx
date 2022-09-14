@@ -9,3 +9,7 @@ export interface CityWeatherDetails {
   sun_rise: number;
   sun_set: number;
 }
+export interface Coordinates {
+  lat: number;
+  lon: number;
+}
