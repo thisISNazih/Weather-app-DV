@@ -110,7 +110,7 @@ const Dashboard = () => {
             state={cityWeatherInfo.filter((c) => {
               return c.name === city.name;
             })}
-            to={`/${city.name}`}
+            to={`/${city.name.replace(/\s/g, '-')}`}
           >
             <div key={city.id} className='dashboard-wrapper__city'>
               <span>{city.name}</span>

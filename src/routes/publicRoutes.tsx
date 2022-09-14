@@ -1,5 +1,4 @@
-
-import { routeConstants } from '../constants/routeConstants';
+import { routeConstants } from '../constants/routes';
 import Dashboard from '../components/dashboard/dashboard';
 import LocationInfo from '../components/locationInfo/locationInfo';
 
@@ -12,6 +11,6 @@ const publicRoutes = [
     path: routeConstants.CITY,
     component: <LocationInfo />,
   },
-]
+];
 
 export default publicRoutes;
