@@ -8,6 +8,7 @@ export interface CityWeatherDetails {
   temp_min: number;
   sun_rise: number;
   sun_set: number;
+  description: string;
 }
 export interface Coordinates {
   lat: number;
