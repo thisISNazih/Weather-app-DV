@@ -6,8 +6,8 @@ export interface CityWeatherDetails {
   pressure: number;
   temp_max: number;
   temp_min: number;
-  sun_rise: number;
-  sun_set: number;
+  sun_rise: string;
+  sun_set: string;
   description: string;
 }
 export interface Coordinates {

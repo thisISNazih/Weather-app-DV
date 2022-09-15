@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import WeatherService from '../../services/weatherService';
 import { CityWeatherDetails } from '../../helper/models';
 import { Coordinates } from '../../helper/models';
+import { convertUnixToTime } from '../../helper/general';
 
 const citiesMap = {
   Stuttgart: {
@@ -83,14 +84,14 @@ const Dashboard = () => {
       if (v) {
         let cityWeather: CityWeatherDetails = {
           name: v.data.name,
-          temp: v.data.main.temp,
+          temp: Math.round(v.data.main.temp),
           id: v.data.id,
           humidity: v.data.main.humidity,
           pressure: v.data.main.pressure,
           temp_max: v.data.main.temp_max,
           temp_min: v.data.main.temp_min,
-          sun_rise: v.data.sys.sunrise,
-          sun_set: v.data.sys.sunset,
+          sun_rise: convertUnixToTime(v.data.sys.sunrise),
+          sun_set: convertUnixToTime(v.data.sys.sunset),
           description: v.data.weather[0].description,
         };
         citiesWeatherInfo.push(cityWeather);
