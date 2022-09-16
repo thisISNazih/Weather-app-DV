@@ -3,6 +3,7 @@
 ### General Guide to run the project:
 - You can run the project by writing the command ```npm start``` ( you may need to run ```npm i```  first to ensure that node modules are included in the project )
 - you should include the the `api key`for the open weather account to successfully make the api requests, in an .env file under the name ```REACT_APP_API_ID``` ( you may use this in your .env file if you don't have an account on open weather ```89903ca51ebd4eedb94e00415b652c0e``` )
+- The code is on branch ```develop```
 
 ### About weather app :
 - When the app loads the user shall get a message to allow the browser to get the current location in order to get the weather data for that location ( if   the user denies, it’s current location weather data won’t appear and only stuttgart and london weather data will be shown)
