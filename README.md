@@ -24,6 +24,10 @@
 - Sunrise time
 - Sunset time
 - visibility
-
-
 - A back button is provided to get back to the previous page
+
+### What could be improved:
+- Block the url for the city weather info to in order to directly access this route from outside
+- Spinner to be added after the user allowed the browser to access the current location in order to have like a feedback for the user that the data is loading
+- Add mocking tests for the api calls
+- Avoid resending the api requests after the user allowed the location
