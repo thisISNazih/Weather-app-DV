@@ -1,0 +1,47 @@
+.dashboard-container{
+.unitSwitcher {
+  margin: 3rem;
+  button {
+    border: none;
+    padding: 1rem 2rem;
+    outline: none;
+    color: white;
+    background-color: rgb(47, 127, 100);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+&__cities {
+  padding: 3rem 3rem;
+  margin-top: 4rem;
+  display: flex;
+  column-gap: 50px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 10px;
+
+  .placeholder {
+   display: flex;
+      .details {
+        display: flex;
+        align-items: center;
+        .cityname {
+          margin-right: 1rem;
+          font-size: 2rem;
+          font-weight: 800;
+        }
+        .currentTemp {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+}

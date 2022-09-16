@@ -1,6 +1,6 @@
 import { routeConstants } from '../constants/routes';
-import Dashboard from '../components/dashboard/dashboard';
-import LocationInfo from '../components/locationInfo/locationInfo';
+import Dashboard from '../components/Dashboard/Dashboard';
+import LocationInfo from '../components/LocationInfo/LocationInfo';
 
 const publicRoutes = [
   {

@@ -1,0 +1,53 @@
+.locationInfo {
+  margin: 4rem 6rem;
+  position: relative;
+  .back-button {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0rem;
+  }
+  &__name {
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+  }
+  &__weatherDetails {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    row-gap: 20px;
+    &__main-info{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      &__description{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+      &__main-temp{
+        font-size: 40px;
+        font-weight: 700;
+      }
+      &__high-low{
+        display: flex;
+        &__high-temp{
+          margin-right: 25px;
+        }
+      }
+    }
+    &__secondary-info{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      font-weight: 500;
+      margin-top: 25px;
+      &__sun-set-rise,
+      &__hum-vis{
+        display: flex;
+        column-gap: 25px;
+      }
+
+    }
+  }
+}
